@@ -1,0 +1,30 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: .1em;
+	color: $black;
+}
+
+h1{
+  font-size: 3em;
+}
+
+h2{
+  line-height: 2em;
+}
+
+a{
+  text-decoration: none;
+  // color: ;
+}
+
+p{
+  font-size: 1em;
+  margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.heading {
+	font-weight: 700;
+	text-transform: uppercase;
+  margin-bottom: 30px;
+}

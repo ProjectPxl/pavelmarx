@@ -1,0 +1,15 @@
+.wrapper{
+	width:100%;
+	overflow: hidden;
+}
+
+.main {
+	background: gray;
+	margin-left: 280px;
+
+	&__section {
+		padding: 40px;
+		&.green{background-color: lighten(green,50%);}
+		&.white{background-color: #fff;}
+	}
+}

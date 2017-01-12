@@ -1,0 +1,24 @@
+////////////////////////
+//
+// Structure
+//
+////////////////////////
+
+.bio-text {
+	@include span-columns(4,12);
+}
+
+.bio-img {
+	@include span-columns(8 omega,12);
+}
+
+.about {
+	@include span-columns(5,12);
+}
+
+.portfolio-list__item {
+	@include span-columns(4,12);
+	&:nth-child(3n+3) {  
+	  @include omega;
+	}
+}

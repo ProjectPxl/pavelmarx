@@ -1,0 +1,25 @@
+////////////////////////
+// Design Partials
+//
+// Seperate your layout from design, building sub folders and partials
+//  in this folder, with everything being imported, in casading order,
+//  into this file.
+//
+// All styling, non box model properties go here
+////////////////////////
+
+	// @include breakpoint($breakpoint-sm){
+	//   text-align: center;
+	// }
+
+	// @include breakpoint($breakpoint-md){
+	//   text-align: center;
+	// }
+
+	// @include breakpoint($breakpoint-lg){
+	//   text-align: left;
+	// }
+	
+@import "left-bar";
+@import "main-area";
+@import "portfolio";
