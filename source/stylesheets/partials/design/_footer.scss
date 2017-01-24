@@ -1,0 +1,17 @@
+.footer-email{
+	width: 100%;
+	background-color: $black;
+	padding: 40px;
+
+	@include breakpoint($breakpoint-sm) {
+	  display: block;
+	}
+
+	@include breakpoint($breakpoint-md) {
+	  display: block;
+	}
+
+	@include breakpoint($breakpoint-lg) {
+	  display: none;
+	}
+}

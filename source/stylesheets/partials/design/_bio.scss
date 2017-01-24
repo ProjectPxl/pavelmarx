@@ -1,0 +1,49 @@
+.bio {
+	background-image: url("../images/bg2.png"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+	text-align: center;
+
+  @include breakpoint($breakpoint-lg) {
+  	margin-bottom: 40px;
+  	text-align: left;
+  }
+}
+
+.bio-text {
+	@include breakpoint($breakpoint-lg) {
+		margin-top: 45%;
+	}
+	
+	color: #fff;
+}
+
+.bio-img {
+
+	.no-lg{
+		margin-bottom: 20px;
+		@include breakpoint($breakpoint-lg) {
+			display: none;
+		}
+	}
+
+	.lg{
+		display: none;
+		@include breakpoint($breakpoint-lg) {
+			display: block;
+			margin-top: 35%;
+		}		
+	}
+
+	img {
+		border-radius: 50%;
+		border: 5px solid #fff;
+		width: 250px;
+		@include breakpoint($breakpoint-lg) {
+			width: auto;
+		}
+	}
+}

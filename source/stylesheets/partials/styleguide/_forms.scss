@@ -1,0 +1,46 @@
+input, textarea {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid $blue;
+  margin-bottom: 20px;
+  color: $blue;
+  outline: none;
+}
+
+textarea {
+  padding: 5px;
+  overflow: auto;
+  resize: none;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: darken($blue, 20%);
+  transition: opacity 250ms ease-in-out;
+}
+:focus::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: darken($blue, 20%);
+  transition: opacity 250ms ease-in-out;
+}
+:focus:-ms-input-placeholder {
+  opacity: 0.5;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: darken($blue, 20%);
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+:focus::-moz-placeholder {
+  opacity: 0.5;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: darken($blue, 20%);
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+:focus:-moz-placeholder {
+  opacity: 0.5;
+}

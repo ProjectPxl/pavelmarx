@@ -5,20 +5,63 @@
 ////////////////////////
 
 .bio-text {
-	@include span-columns(4,12);
+	@include breakpoint($breakpoint-sm) {
+	  width: 100%;
+	}
+
+	@include breakpoint($breakpoint-md) {
+	  width: 100%;
+	}
+
+	@include breakpoint($breakpoint-lg) {
+		@include span-columns(5,12);
+	}
 }
 
 .bio-img {
-	@include span-columns(8 omega,12);
+	@include breakpoint($breakpoint-sm) {
+	  @include span-columns(4,4);
+	}
+
+	@include breakpoint($breakpoint-md) {
+	  @include span-columns(8,8);
+	}
+
+	@include breakpoint($breakpoint-lg) {
+		@include span-columns(7 omega,12);
+	}
 }
 
-.about {
-	@include span-columns(5,12);
+.about, .footer {
+	@include breakpoint($breakpoint-sm) {
+	  width: 100%;
+	}
+
+	@include breakpoint($breakpoint-md) {
+	  width: 100%;
+	}
+
+	@include breakpoint($breakpoint-lg) {
+		@include span-columns(6,12);
+	}
+}
+
+.portfolio-list {
+	max-width: 90em;
+	margin: 0 auto;
 }
 
 .portfolio-list__item {
-	@include span-columns(4,12);
-	&:nth-child(3n+3) {  
-	  @include omega;
+	float: left;
+	display: block;
+
+  width: 100%;
+
+  @include breakpoint($breakpoint-md) {
+  	width: 50%;
+  }
+
+	@include breakpoint($breakpoint-lg) {
+		width: 50%;
 	}
 }

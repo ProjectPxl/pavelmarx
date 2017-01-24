@@ -4,12 +4,15 @@
 }
 
 .main {
-	background: gray;
-	margin-left: 280px;
+	@include breakpoint($breakpoint-lg) {
+		margin-left: 280px;
+	}
 
 	&__section {
 		padding: 40px;
-		&.green{background-color: lighten(green,50%);}
-		&.white{background-color: #fff;}
+		&.no-p{
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 }

@@ -1,3 +1,11 @@
 .portfolio-list__item {
-	margin-bottom: 1em;
+	position: relative;
+	overflow: hidden;
+
+	.pic{
+    @include breakpoint($breakpoint-lg) {
+    	min-width: 100% !important;
+      min-height: 100% !important;
+    }
+	}
 }

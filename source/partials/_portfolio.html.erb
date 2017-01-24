@@ -1,16 +1,37 @@
-<div class="main__section">
-	
+<div class="main__section no-p">
 	<div class="grid-construct">
+		<%= partial("partials/heading", :locals => { :title => "Projects", :copy => "" }) %>
+	</div>
+	
+	<div class="clearfix">
 
 		<div class="portfolio">
-			<h1 class="heading">Work</h1>
-			<ul class="portfolio-list">
-				<li class="portfolio-list__item"><%= image_tag 'http://lorempixel.com/300/300', :class => '' %>		</li>
-				<li class="portfolio-list__item"><%= image_tag 'http://lorempixel.com/300/300', :class => '' %>		</li>
-				<li class="portfolio-list__item"><%= image_tag 'http://lorempixel.com/300/300', :class => '' %>		</li>
-				<li class="portfolio-list__item"><%= image_tag 'http://lorempixel.com/300/300', :class => '' %>		</li>
-				<li class="portfolio-list__item"><%= image_tag 'http://lorempixel.com/300/300', :class => '' %>		</li>
-				<li class="portfolio-list__item"><%= image_tag 'http://lorempixel.com/300/300', :class => '' %>		</li>
+			<ul class="portfolio-list clearfix">
+				
+				<li class="portfolio-list__item">
+					<a target="_blank" href="https://www.westfield.com/">
+						<%= image_tag 'portfolio_westfield.png', :class => 'pic' %>
+					</a>
+				</li>
+				
+				<li class="portfolio-list__item">
+					<a target="_blank" href="http://www.oceanmist.com/">
+						<%= image_tag 'portfolio_om.png', :class => 'pic' %>
+					</a>
+				</li>
+				
+				<li class="portfolio-list__item">
+					<a target="_blank" href="http://www.blurb.com/">
+						<%= image_tag 'portfolio_blurb.png', :class => 'pic' %>
+					</a>
+				</li>
+				
+				<li class="portfolio-list__item">
+					<a target="_blank" href="https://groceryoutlet.com/">
+						<%= image_tag 'portfolio_go.png', :class => 'pic' %>
+					</a>
+				</li>
+
 			</ul>
 		</div>
 

@@ -8,3 +8,18 @@
  * Buttons and
  * Call-to-actions (CTA's)
  */
+
+.btn {
+	background: none;
+	border: 1px solid $blue;
+	color: $blue;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+
+	&:hover {
+		border-color: lighten($blue, 10%);
+		color: lighten($blue, 10%);
+	}
+}
