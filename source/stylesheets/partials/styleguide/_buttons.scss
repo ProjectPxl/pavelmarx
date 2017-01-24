@@ -18,8 +18,19 @@
 	padding: 10px;
 	cursor: pointer;
 
-	&:hover {
-		border-color: lighten($blue, 10%);
-		color: lighten($blue, 10%);
+	&--blue {
+		&:hover {
+			border-color: lighten($blue, 10%);
+			color: lighten($blue, 10%);
+		}
+	}
+
+	&--white {
+		border-color: #fff;
+		color: #fff;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }

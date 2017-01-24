@@ -42,7 +42,7 @@
 	}
 
 	@include breakpoint($breakpoint-lg) {
-		@include span-columns(6,12);
+		@include span-columns(7,12);
 	}
 }
 
